@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V A J | S T Y L E</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="font-[Rajdhani] bg-white text-gray-800">
+    <!-- Header -->
+    <header class="fixed top-0 w-full bg-[#1c1c1c] text-white flex justify-around items-center h-[95px] z-20 text-[19px]">
+        <div class="flex gap-4 items-center">
+            <a href="#" class="hover:underline">INICIO</a>
+            <a href="#" class="hover:underline">TIENDA</a>
+            <a href="#" class="hover:underline">CARRITO</a>
+            <a href="#" class="hover:underline">NOSOTROS</a>
+        </div>
+        <div class="flex gap-4 items-center">
+            <a href="#" class="hover:underline">BUSCAR</a>
+            <a href="#" class="hover:underline">FAVORITOS</a>
+            <a href="#" class="hover:underline">CARRITO</a>
+            <form method="POST" action="#">
+                <button class="text-white underline hover:font-bold">CERRAR SESIÓN</button>
+            </form>
+        </div>
+    </header>
+
+    <!-- Botón arriba -->
+    <button id="myBtn" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })" class="hidden fixed bottom-5 right-6 bg-[#556b2f] text-[#e0e0e0] px-4 py-3 rounded-md text-lg z-[900] hover:bg-[#faf9f6] hover:text-[#556b2f]">
+        ↑
+    </button>
+
+    <main class="mt-[100px]">
+        <!-- Slider -->
+        <section class="relative overflow-hidden rounded-xl mx-auto max-w-screen-xl">
+            <div class="flex transition-transform duration-500" id="slider">
+                <div class="flex min-w-full justify-center items-center">
+                    <div class="flex justify-between items-center w-full gap-10 px-10">
+                        <div class="max-w-[35%] text-black">
+                            <h2 class="text-4xl font-bold mb-2">Explora la nueva colección</h2>
+                            <p class="text-[22px] font-medium mb-4">Estilo urbano para tu día a día</p>
+                            <a href="#" class="inline-block bg-white text-black font-bold px-6 py-3 rounded-full text-lg hover:bg-gray-300">Compra ahora</a>
+                        </div>
+                        <img src="./media/slider_1.png" class="max-w-[580px] h-auto">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Te puede gustar -->
+        <section class="py-12 px-4 max-w-[1470px] mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-8">Te puede gustar</h2>
+            <div class="flex gap-8 overflow-x-auto pb-4">
+                <div class="w-[140px] h-[180px] flex-shrink-0 text-center hover:scale-105 transition-transform">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxgiMjOXjUwqJKnbP2xitIGMc3X1kEilOx5A&s" class="w-[140px] h-[140px] rounded-full object-cover mx-auto">
+                    <p class="mt-2 font-medium text-black">Ropa</p>
+                </div>
+                <div class="w-[140px] h-[180px] flex-shrink-0 text-center hover:scale-105 transition-transform">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxgiMjOXjUwqJKnbP2xitIGMc3X1kEilOx5A&s" class="w-[140px] h-[140px] rounded-full object-cover mx-auto">
+                    <p class="mt-2 font-medium text-black">Ropa</p>
+                </div>
+                <div class="w-[140px] h-[180px] flex-shrink-0 text-center hover:scale-105 transition-transform">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxgiMjOXjUwqJKnbP2xitIGMc3X1kEilOx5A&s" class="w-[140px] h-[140px] rounded-full object-cover mx-auto">
+                    <p class="mt-2 font-medium text-black">Ropa</p>
+                </div>
+                <div class="w-[140px] h-[180px] flex-shrink-0 text-center hover:scale-105 transition-transform">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxgiMjOXjUwqJKnbP2xitIGMc3X1kEilOx5A&s" class="w-[140px] h-[140px] rounded-full object-cover mx-auto">
+                    <p class="mt-2 font-medium text-black">Ropa</p>
+                </div>
+                <div class="w-[140px] h-[180px] flex-shrink-0 text-center hover:scale-105 transition-transform">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxgiMjOXjUwqJKnbP2xitIGMc3X1kEilOx5A&s" class="w-[140px] h-[140px] rounded-full object-cover mx-auto">
+                    <p class="mt-2 font-medium text-black">Ropa</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ofertas Especiales -->
+        <section class="bg-gray-50 py-12 px-4">
+            <h2 class="text-3xl font-bold text-center mb-4">Ofertas Especiales</h2>
+            <p class="text-center text-gray-600 mb-8">Ofertas De Verano Hasta 60% de descuento</p>
+            <div class="flex flex-wrap justify-center gap-6">
+                <div class="w-[250px] bg-white rounded-xl overflow-hidden shadow text-center hover:-translate-y-1.5 transition-transform">
+                    <img src="./media/product-0-1.jpg" class="w-full h-[160px] object-cover">
+                    <h3 class="text-xl font-semibold mt-4">Bermuda</h3>
+                    <p class="text-red-500 font-bold">$82.000</p>
+                    <a href="#" class="inline-block mt-3 mb-4 bg-black text-white px-4 py-2 rounded-md text-sm hover:bg-[#556b2f] hover:text-gray-100 font-semibold">Comprar ahora</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portadas -->
+        <section class="py-12 px-4">
+            <div class="flex flex-wrap justify-center gap-6">
+                <div class="w-[650px] bg-white rounded-xl overflow-hidden shadow text-center hover:-translate-y-1.5 transition-transform">
+                    <img src="./media/portada_1.jpg" class="w-full h-64 object-cover">
+                    <h3 class="text-xl font-bold mt-3">Blazers</h3>
+                    <a href="#" class="inline-block mb-4 bg-black text-white px-4 py-2 rounded-md text-sm hover:bg-[#556b2f] hover:text-gray-100 font-semibold">Comprar ahora</a>
+                </div>
+                <div class="w-[650px] bg-white rounded-xl overflow-hidden shadow text-center hover:-translate-y-1.5 transition-transform">
+                    <img src="./media/portada_2.jpg" class="w-full h-64 object-cover">
+                    <h3 class="text-xl font-bold mt-3">Deportiva</h3>
+                    <a href="#" class="inline-block mb-4 bg-black text-white px-4 py-2 rounded-md text-sm hover:bg-[#556b2f] hover:text-gray-100 font-semibold">Comprar ahora</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Productos Destacados -->
+        <section class="bg-gray-50 py-12 px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">Productos Destacados</h2>
+            <div class="flex flex-wrap justify-center gap-6">
+                <div class="w-[330px] bg-white rounded-xl overflow-hidden shadow text-center hover:-translate-y-1.5 transition-transform">
+                    <img src="./media/producto_1.jpg" class="w-full h-40 object-cover">
+                    <h3 class="text-xl font-semibold mt-3">Descripción</h3>
+                    <p class="text-gray-800">$Precio</p>
+                    <a href="#" class="inline-block mb-4 bg-black text-white px-4 py-2 rounded-md text-sm hover:bg-[#556b2f] hover:text-gray-100 font-semibold">Comprar ahora</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#1c1c1c] text-white py-10 px-4">
+        <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-5 gap-6">
+            <div>
+                <img src="#" class="w-24 mb-4">
+                <p class="text-sm">#104, Complejo Norte Carrera 68, Medellín</p>
+                <p class="text-sm">contactovaj@gmail.com</p>
+                <p class="text-sm">+57 300 607 86 41</p>
+            </div>
+            <div class="flex flex-col gap-2">
+                <a href="#" class="hover:underline">Sobre Nosotros</a>
+                <a href="#" class="hover:underline">Carreras</a>
+                <a href="#" class="hover:underline">Afiliados</a>
+                <a href="#" class="hover:underline">Blog</a>
+                <a href="#" class="hover:underline">Contacto</a>
+            </div>
+            <div class="flex flex-col gap-2">
+                <a href="#" class="hover:underline">Nueva colección</a>
+                <a href="#" class="hover:underline">Accesorios</a>
+                <a href="#" class="hover:underline">Hombre</a>
+                <a href="#" class="hover:underline">Mujer</a>
+                <a href="#" class="hover:underline">Tienda</a>
+            </div>
+            <div class="flex flex-col gap-2">
+                <a href="#" class="hover:underline">Servicio al cliente</a>
+                <a href="#" class="hover:underline">Mi cuenta</a>
+                <a href="#" class="hover:underline">Encontrar tienda</a>
+                <a href="#" class="hover:underline">Privacidad</a>
+                <a href="#" class="hover:underline">Gift Card</a>
+            </div>
+            <div class="flex flex-col gap-2">
+                <a href="#" class="hover:underline">Camisas</a>
+                <a href="#" class="hover:underline">Jeans</a>
+                <a href="#" class="hover:underline">Zapatos</a>
+                <a href="#" class="hover:underline">Bolsas</a>
+                <a href="#" class="hover:underline">Tienda</a>
+            </div>
+        </div>
+        <div class="text-center mt-8 text-sm text-gray-400">&copy;2025 V A J | $ T Y L E</div>
+    </footer>
+</body>
+
+</html>
+
